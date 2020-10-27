@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.use('/api', require('./api'));
+// app.use('/db', require('./db'));
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
